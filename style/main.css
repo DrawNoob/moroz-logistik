@@ -94,3 +94,34 @@ body {
 .li {
   list-style: none;
 }
+
+.link_animation {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 0.1em;
+  transition: all 0.5s;
+}
+
+.link_animation:hover {
+  background-size: 100% 0.1em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.main-header-container {
+  background-color: grey;
+  height: 75px;
+}
+.main-header-container .header-logo-img {
+  width: 50px;
+  transition: 0.3s all;
+}
+.main-header-container .header-logo-img:hover {
+  transform: scale(1.1);
+}
+.main-header-container ul {
+  list-style: none;
+}
