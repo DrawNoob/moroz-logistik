@@ -35,7 +35,95 @@
 
     <!----------------------------------------------  MAIN  ---------------------------------------------->
     <main>
-
+        <div class="d-flex justify-content-center">
+            <!-- ФОРМА ДЛЯ КЛІЄНТА -->
+            <form id="multiStepForm" class="form-send d-flex flex-column">
+                <!-- Наскільки Заповнене Житло -->
+                <div class="step active">
+                    <p class="bold question-title">Wie voll ist Ihr Zuhause?</p>
+                    <div class="labels-container">
+                        <label><input type="radio" name="question1" value="Wenig" required> Wenig</label>
+                        <label><input type="radio" name="question1" value="Mittel"> Mittel</label>
+                        <label><input type="radio" name="question1" value="Viel"> Viel</label>
+                        <label><input type="radio" name="question1" value="Messi"> Messi</label>
+                    </div>
+                </div>
+                <!-- Вибір фото -->
+                <div class="step">
+                    <p class="bold question-title">Wählen Sie ein Foto</p>
+                    <div class="labels-container">
+                        <div class="d-flex flex-column">
+                            <img src="" alt="SomeImage">
+                            <label><input type="radio" name="question2" value="Haushaltsauflösung " required> Haushaltsauflösung</label>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img src="" alt="SomeImage">
+                            <label><input type="radio" name="question2" value="Entrümpelung"> Entrümpelung</label>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img src="" alt="SomeImage">
+                            <label><input type="radio" name="question2" value="Räumung "> Räumung</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Який тип власності -->
+                <div class="step">
+                    <p class="bold question-title">Welche Art von Immobilie?</p>
+                    <div class="labels-container">
+                        <label><input type="radio" name="question3" value="Wohnung" required> Wohnung</label>
+                        <label><input type="radio" name="question3" value="Haus"> Haus</label>
+                        <label><input type="radio" name="question3" value="Sonstiges"> Sonstiges</label>
+                    </div>
+                </div>
+                <!-- Який поверх -->
+                <div class="step">
+                    <p class="bold question-title">Welches Stockwerk muss gereinigt werden?</p>
+                    <div class="labels-container">
+                        <label><input type="radio" name="question4" value="Keller" required> Keller</label>
+                        <label><input type="radio" name="question4" value="EG"> EG</label>
+                        <label><input type="radio" name="question4" value="1"> 1</label>
+                        <label><input type="radio" name="question4" value="2"> 2</label>
+                        <label><input type="radio" name="question4" value="3"> 3</label>
+                        <label><input type="radio" name="question4" value="4"> 4</label>
+                        <label><input type="radio" name="question4" value="DG"> DG</label>
+                        <label><input type="radio" name="question4" value="Sonstiges"> Sonstiges</label>
+                    </div>
+                </div>
+                <!-- Є ліфт чи сходи перед дверима? -->
+                <div class="step">
+                    <p class="bold question-title">Gibt es einen Aufzug und Treppen vor der Tür?</p>
+                    <div class="labels-container">
+                        <label><input type="radio" name="question5" value="Kein Aufzug und keine Treppen" required> Kein Aufzug und keine Treppen</label>
+                        <label><input type="radio" name="question5" value="Kein Aufzug, aber Treppen"> Kein Aufzug, aber Treppen</label>
+                        <label><input type="radio" name="question5" value="Keine Treppen, aber Aufzug"> Keine Treppen, aber Aufzug</label>
+                        <label><input type="radio" name="question5" value="Es gibt sowohl einen Aufzug als auch Treppen"> Es gibt sowohl einen Aufzug als auch Treppen</label>
+                    </div>
+                </div>
+                <!-- Завантажити фото -->
+                <div class="step">
+                    <p class="bold question-title">Fügen Sie Fotos / Videos des aktuellen Zustands hinzu, um die Arbeit besser planen zu können.</p>
+                    <div class="labels-container">
+                        <label><input type="radio" name="question6" value="UPLOAD" required> UPLOAD</label>
+                    </div>
+                </div>
+                <!-- Інформація про клієнта -->
+                <div class="step">
+                    <p class="bold question-title">Persönliche Daten des Kunden</p>
+                    <div class="labels-container flex-column align-items-center">
+                        <input class="input-field-form w-25" type="text" name="FullName" placeholder="Fullname" required>
+                        <input class="input-field-form w-25" type="text" name="YourEmail" placeholder="E-mail">
+                        <input class="input-field-form w-25" type="text" name="PhoneNumber" placeholder="Mobile Number">
+                        <input class="input-field-form w-25" type="date" name="DateClient" placeholder="Date to confirm">
+                    </div>
+                </div>
+                <!-- Кнопки -->
+                <div class="step-buttons">
+                    <button class="p-3 bold" type="button" id="prevBtn" onclick="changeStep(-1)">Previous</button>
+                    <button class="p-3 bold" type="button" id="nextBtn" onclick="changeStep(1)">Next</button>
+                    <button class="p-3 bold" type="submit" id="submitBtn" style="display: none;">Submit</button>
+                </div>
+            </form>
+        </div>
     </main>
 
     <!---------------------------------------------- FOOTER ---------------------------------------------->
@@ -47,5 +135,11 @@
     <!-- JS Script's here -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init('diEz9U4pmHMQHB9dx');
+        })();
+    </script>
 </body>
 </html>
