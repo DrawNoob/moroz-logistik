@@ -115,6 +115,15 @@ body {
   background-color: grey;
   height: 75px;
 }
+.main-header-container .nav-social-icon {
+  width: 40px;
+  border-radius: 50%;
+  transition: 0.3s all;
+}
+.main-header-container .nav-social-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px black;
+}
 .main-header-container .header-logo-img {
   width: 50px;
   transition: 0.3s all;

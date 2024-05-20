@@ -18,9 +18,9 @@
                     <img class="header-logo-img" src="assets/main-logo.png" alt="">
                 </a>
                 <div class="d-flex gap-3">
-                    <a href="#">ICO</a>
-                    <a href="#">ICO</a>
-                    <a href="#">ICO</a>
+                    <a href="#"><img class="nav-social-icon" src="./assets/facebook.png" alt=""></a>
+                    <a href="#"><img class="nav-social-icon" src="./assets/instagram.png" alt=""></a>
+                    <a href="#"><img class="nav-social-icon" src="./assets/twitter.png" alt=""></a>
                 </div>
             </div>
             <ul class="d-flex h-100 gap-5 justify-content-center align-items-center mb-0">
@@ -37,7 +37,7 @@
     <main>
         <div class="d-flex justify-content-center">
             <!-- ФОРМА ДЛЯ КЛІЄНТА -->
-            <form id="multiStepForm" class="form-send d-flex flex-column">
+            <form id="multiStepForm" class="form-send d-flex flex-column" enctype="multipart/form-data">
                 <!-- Наскільки Заповнене Житло -->
                 <div class="step active">
                     <p class="bold question-title">Wie voll ist Ihr Zuhause?</p>
@@ -103,7 +103,7 @@
                 <div class="step">
                     <p class="bold question-title">Fügen Sie Fotos / Videos des aktuellen Zustands hinzu, um die Arbeit besser planen zu können.</p>
                     <div class="labels-container">
-                        <label><input type="radio" name="question6" value="UPLOAD" required> UPLOAD</label>
+                        <input type="file" name="uploadPhotos" accept="image/*">
                     </div>
                 </div>
                 <!-- Інформація про клієнта -->
@@ -118,7 +118,7 @@
                 </div>
                 <!-- Кнопки -->
                 <div class="step-buttons">
-                    <button class="p-3 bold" type="button" id="prevBtn" onclick="changeStep(-1)">Previous</button>
+                    <button class="p-3 bold step" type="button" id="prevBtn" onclick="changeStep(-1)">Previous</button>
                     <button class="p-3 bold" type="button" id="nextBtn" onclick="changeStep(1)">Next</button>
                     <button class="p-3 bold" type="submit" id="submitBtn" style="display: none;">Submit</button>
                 </div>
@@ -128,7 +128,7 @@
 
     <!---------------------------------------------- FOOTER ---------------------------------------------->
     <footer>
-
+        
     </footer>
 
 
