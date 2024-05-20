@@ -90,6 +90,11 @@ body {
   font-size: 1.1vw;
   overflow-x: hidden;
 }
+@media (max-width: 960px) {
+  body {
+    font-size: 4.4vw;
+  }
+}
 
 .li {
   list-style: none;
@@ -122,24 +127,93 @@ input[type=file] {
   font-weight: bold;
 }
 
+@media (max-width: 960px) {
+  .mob-flex {
+    flex-direction: row !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .mob-col {
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .mob-w-full {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .mob-p {
+    padding: 0 30px;
+  }
+}
+
+.text-yellow {
+  color: #FFD016;
+}
+
+@media (max-width: 960px) {
+  .mob-none {
+    display: none !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .mob-w-50 {
+    width: 50% !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .mob-w-75 {
+    width: 75% !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .mob-w-100 {
+    width: 100% !important;
+  }
+}
+
 .main-header-container {
   background-color: rgb(255, 255, 255);
   border-bottom: 3px solid black;
   height: 75px;
 }
-.main-header-container .nav-icons-block {
+@media (max-width: 960px) {
+  .main-header-container {
+    width: 100%;
+    padding: 0 20px !important;
+  }
+}
+@media (max-width: 960px) {
+  .main-header-container .mob-spec {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+.main-header-container .mob-spec .nav-icons-block {
   background: red;
   height: 75px;
   width: 200px;
   border-bottom: 2px solid black;
 }
-.main-header-container .nav-icons-block .nav-social-icon {
+@media (max-width: 960px) {
+  .main-header-container .mob-spec .nav-icons-block {
+    width: 55%;
+  }
+}
+.main-header-container .mob-spec .nav-icons-block .nav-social-icon {
   width: 40px;
   border-radius: 50%;
   transition: 0.3s all;
   border: 2px solid transparent;
 }
-.main-header-container .nav-icons-block .nav-social-icon:hover {
+.main-header-container .mob-spec .nav-icons-block .nav-social-icon:hover {
   transform: scale(1.1);
   border: 2px solid white;
   box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -164,6 +238,12 @@ input[type=file] {
   margin-top: 100px;
   border: 2px solid black;
   border-radius: 22px;
+}
+@media (max-width: 960px) {
+  .form-send {
+    width: 90%;
+    margin-top: 10px;
+  }
 }
 .form-send .question-title {
   background-color: red;
@@ -240,6 +320,11 @@ input[type=file] {
   border-radius: 8px;
   border: 2px solid rgb(255, 255, 255);
   transition: 0.3s all;
+}
+@media (max-width: 960px) {
+  .form-send .step-buttons button {
+    width: 45%;
+  }
 }
 .form-send .step-buttons button:nth-child(1) {
   background-color: rgb(185, 5, 5);

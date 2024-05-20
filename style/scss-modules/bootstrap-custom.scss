@@ -1,3 +1,47 @@
 .bold{
     font-weight: bold;
 }
+// CUSTOM RESPONSIVE CLASSES
+.mob-flex{
+    @media (max-width: 960px){
+        flex-direction: row !important;
+    }
+}
+.mob-col{
+    @media (max-width: 960px){
+        flex-direction: column !important;
+    }
+}
+.mob-w-full{
+    @media (max-width: 960px){
+        width: 100% !important;
+    }
+}
+.mob-p{
+    @media (max-width: 960px){
+        padding: 0 30px;
+    }
+}
+.text-yellow{
+    color: #FFD016;
+}
+.mob-none{
+    @media (max-width: 960px){
+        display: none !important;
+    }
+}
+.mob-w-50{
+    @media (max-width: 960px){
+        width: 50% !important;
+    }
+}
+.mob-w-75{
+    @media (max-width: 960px){
+        width: 75% !important;
+    }
+}
+.mob-w-100{
+    @media (max-width: 960px){
+        width: 100% !important;
+    }
+}

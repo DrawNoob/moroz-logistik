@@ -53,6 +53,9 @@ body {
     font-weight: 300;
     font-size: 1.1vw;
     overflow-x: hidden;
+    @media (max-width: 960px){
+      font-size: 4.4vw;
+    }
 }
 .li {
     list-style: none;

@@ -13,7 +13,7 @@
     <!---------------------------------------------- HEADER ---------------------------------------------->
     <header>
         <div class="main-header-container d-flex justify-content-between gap-5 px-5 align-items-center">
-            <div class="d-flex align-items-center gap-5">
+            <div class="d-flex align-items-center gap-5 mob-spec">
                 <a href="index.html">
                     <img class="header-logo-img" src="assets/main-logo.png" alt="">
                 </a>
@@ -23,8 +23,8 @@
                     <a href="#"><img class="nav-social-icon" src="./assets/twitter.png" alt=""></a>
                 </div>
             </div>
-            <ul class="d-flex h-100 gap-5 justify-content-center align-items-center mb-0">
-                <li><a class="nav-link-header link_animation" href="#">Home</a></li>
+            <ul class="d-flex h-100 gap-5 justify-content-center align-items-center mb-0 mob-none">
+                <li><a class="nav-link-header link_animation" href="index.html">Home</a></li>
                 <li><a class="nav-link-header link_animation" href="#">About Us</a></li>
                 <li><a class="nav-link-header link_animation" href="#">Services</a></li>
                 <li><a class="nav-link-header link_animation" href="#">Contact</a></li>
@@ -41,7 +41,7 @@
                 <!-- Наскільки Заповнене Житло -->
                 <div class="step active">
                     <p class="bold question-title">Wie voll ist Ihr Zuhause?</p>
-                    <div class="labels-container w-50 mx-auto">
+                    <div class="labels-container w-50 mx-auto mob-col mob-w-75">
                         <label class="form-labels-style"><input type="radio" name="question1" value="Wenig" required> Wenig</label>
                         <label class="form-labels-style"><input type="radio" name="question1" value="Mittel"> Mittel</label>
                         <label class="form-labels-style"><input type="radio" name="question1" value="Viel"> Viel</label>
@@ -51,16 +51,16 @@
                 <!-- Вибір фото -->
                 <div class="step">
                     <p class="bold question-title">Wählen Sie ein Foto</p>
-                    <div class="labels-container">
-                        <div class="d-flex flex-column w-25">
+                    <div class="labels-container mob-col">
+                        <div class="d-flex flex-column w-25 mob-w-100">
                             <img class="w-100" src="./assets/example-1.jpg" alt="SomeImage">
                             <label class="form-labels-style mt-3 w-100 d-flex justify-content-center align-items-center"><input type="radio" name="question2" value="Haushaltsauflösung " required> Haushaltsauflösung</label>
                         </div>
-                        <div class="d-flex flex-column w-25">
+                        <div class="d-flex flex-column w-25 mob-w-100">
                             <img class="w-100" src="./assets/example-2.jpg" alt="SomeImage">
                             <label class="form-labels-style mt-3 w-100 d-flex justify-content-center align-items-center"><input type="radio" name="question2" value="Entrümpelung"> Entrümpelung</label>
                         </div>
-                        <div class="d-flex flex-column w-25">
+                        <div class="d-flex flex-column w-25 mob-w-100">
                             <img class="w-100" src="./assets/example-3.jpg" alt="SomeImage">
                             <label class="form-labels-style mt-3 w-100 d-flex justify-content-center align-items-center"><input type="radio" name="question2" value="Räumung "> Räumung</label>
                         </div>
@@ -69,7 +69,7 @@
                 <!-- Який тип власності -->
                 <div class="step">
                     <p class="bold question-title">Welche Art von Immobilie?</p>
-                    <div class="labels-container w-50 mx-auto">
+                    <div class="labels-container w-50 mx-auto mob-col mob-w-75">
                         <label class="form-labels-style"><input type="radio" name="question3" value="Wohnung" required> Wohnung</label>
                         <label class="form-labels-style"><input type="radio" name="question3" value="Haus"> Haus</label>
                         <label class="form-labels-style"><input type="radio" name="question3" value="Sonstiges"> Sonstiges</label>
@@ -78,7 +78,7 @@
                 <!-- Який поверх -->
                 <div class="step">
                     <p class="bold question-title">Welches Stockwerk muss gereinigt werden?</p>
-                    <div class="labels-container">
+                    <div class="labels-container d-flex flex-wrap mob-col mx-auto">
                         <label class="form-labels-style"><input type="radio" name="question4" value="Keller" required> Keller</label>
                         <label class="form-labels-style"><input type="radio" name="question4" value="EG"> EG</label>
                         <label class="form-labels-style"><input type="radio" name="question4" value="1"> 1</label>
@@ -92,7 +92,7 @@
                 <!-- Є ліфт чи сходи перед дверима? -->
                 <div class="step">
                     <p class="bold question-title">Gibt es einen Aufzug und Treppen vor der Tür?</p>
-                    <div class="labels-container d-flex flex-wrap w-50 mx-auto">
+                    <div class="labels-container d-flex flex-wrap w-50 mx-auto mob-w-100">
                         <label class="form-labels-style w-100"><input type="radio" name="question5" value="Kein Aufzug und keine Treppen" required> Kein Aufzug und keine Treppen</label>
                         <label class="form-labels-style w-100"><input type="radio" name="question5" value="Kein Aufzug, aber Treppen"> Kein Aufzug, aber Treppen</label>
                         <label class="form-labels-style w-100"><input type="radio" name="question5" value="Keine Treppen, aber Aufzug"> Keine Treppen, aber Aufzug</label>
@@ -102,7 +102,7 @@
                 <!-- Завантажити фото -->
                 <div class="step">
                     <p class="bold question-title">Fügen Sie Fotos / Videos des aktuellen Zustands hinzu, um die Arbeit besser planen zu können.</p>
-                    <div class="labels-container w-25 mx-auto">
+                    <div class="labels-container w-25 mx-auto mob-w-100">
                         <label for="custom-upload" class="upload-style w-100 text-center">
                             UPLOAD IMAGE
                             <input id="custom-upload" type="file" name="uploadPhotos" accept="image/*">
@@ -113,10 +113,10 @@
                 <div class="step">
                     <p class="bold question-title">Persönliche Daten des Kunden</p>
                     <div class="labels-container flex-column align-items-center">
-                        <input class="input-field-form w-25" type="text" name="FullName" placeholder="Fullname" required>
-                        <input class="input-field-form w-25" type="text" name="YourEmail" placeholder="E-mail">
-                        <input class="input-field-form w-25" type="text" name="PhoneNumber" placeholder="Mobile Number">
-                        <input class="input-field-form w-25" type="date" name="DateClient" placeholder="Date to confirm">
+                        <input class="input-field-form w-25 mob-w-100" type="text" name="FullName" placeholder="Fullname" required>
+                        <input class="input-field-form w-25 mob-w-100" type="text" name="YourEmail" placeholder="E-mail">
+                        <input class="input-field-form w-25 mob-w-100" type="text" name="PhoneNumber" placeholder="Mobile Number">
+                        <input class="input-field-form w-25 mob-w-100" type="date" name="DateClient" placeholder="Date to confirm">
                     </div>
                 </div>
                 <!-- Кнопки -->

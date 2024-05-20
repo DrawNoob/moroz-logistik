@@ -8,23 +8,37 @@
     background-color: rgb(255, 255, 255);
     border-bottom: 3px solid black;
     height: 75px;
-    .nav-icons-block{
-        background: red;
-        height: 75px;
-        width: 200px;
-        border-bottom: 2px solid black;
-        .nav-social-icon{
-            width: 40px;
-            border-radius: 50%;
-            transition: 0.3s all;
-            border: 2px solid transparent;
-            &:hover{
-                transform: scale(1.1);
-                border: 2px solid white;
-                box-shadow: 0 0 10px rgb(255, 255, 255);
+    @media (max-width: 960px){
+        width: 100%;
+        padding: 0 20px !important;
+    }
+    .mob-spec{
+        @media (max-width: 960px){
+            width: 100%;
+            justify-content: space-between;
+        }
+        .nav-icons-block{
+            background: red;
+            height: 75px;
+            width: 200px;
+            border-bottom: 2px solid black;
+            @media (max-width: 960px){
+                width: 55%;
+            }
+            .nav-social-icon{
+                width: 40px;
+                border-radius: 50%;
+                transition: 0.3s all;
+                border: 2px solid transparent;
+                &:hover{
+                    transform: scale(1.1);
+                    border: 2px solid white;
+                    box-shadow: 0 0 10px rgb(255, 255, 255);
+                }
             }
         }
     }
+
     .nav-link-header{
         color: red;
         font-weight: 600;
@@ -46,6 +60,10 @@
     margin-top: 100px;
     border: 2px solid black;
     border-radius: 22px;
+    @media (max-width: 960px){
+        width: 90%;
+        margin-top: 10px;
+    }
     .question-title{
         background-color: red;
         color: white;
@@ -120,6 +138,9 @@
             border-radius: 8px;
             border: 2px solid rgb(255, 255, 255);
             transition: 0.3s all;
+            @media (max-width: 960px){
+                width: 45%;
+            }
             &:nth-child(1){
                 background-color: rgb(185, 5, 5);
                 color: white;
