@@ -95,6 +95,17 @@ body {
   list-style: none;
 }
 
+input[type=file] {
+  display: none;
+}
+
+.upload-style {
+  border: 1px solid #ccc;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
 .link_animation {
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
@@ -112,17 +123,30 @@ body {
 }
 
 .main-header-container {
-  background-color: grey;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 3px solid black;
   height: 75px;
 }
-.main-header-container .nav-social-icon {
+.main-header-container .nav-icons-block {
+  background: red;
+  height: 75px;
+  width: 200px;
+  border-bottom: 2px solid black;
+}
+.main-header-container .nav-icons-block .nav-social-icon {
   width: 40px;
   border-radius: 50%;
   transition: 0.3s all;
+  border: 2px solid transparent;
 }
-.main-header-container .nav-social-icon:hover {
+.main-header-container .nav-icons-block .nav-social-icon:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px black;
+  border: 2px solid white;
+  box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+.main-header-container .nav-link-header {
+  color: red;
+  font-weight: 600;
 }
 .main-header-container .header-logo-img {
   width: 50px;
@@ -138,9 +162,11 @@ body {
 .form-send {
   width: 1000px;
   margin-top: 100px;
+  border: 2px solid black;
+  border-radius: 22px;
 }
 .form-send .question-title {
-  background-color: black;
+  background-color: red;
   color: white;
   padding: 20px;
   border-top-left-radius: 20px;
@@ -149,15 +175,49 @@ body {
 }
 .form-send .labels-container {
   padding: 20px;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
   display: flex;
   gap: 30px;
+  width: 100%;
+  justify-content: space-between;
 }
 .form-send .labels-container .input-field-form {
-  padding: 4px 8px;
-  background: rgb(229, 226, 226);
+  padding: 10px;
+  background-color: rgb(247, 243, 243);
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(70, 68, 68, 0.763);
   border: 1px solid black;
+}
+.form-send .labels-container .form-labels-style {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  background-color: rgb(247, 243, 243);
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(70, 68, 68, 0.763);
+}
+.form-send .labels-container .form-labels-style:hover {
+  border-color: red;
+  cursor: pointer;
+  background-color: rgb(205, 205, 205);
+}
+.form-send .labels-container .form-labels-style input {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+.form-send .labels-container .upload-style {
+  background-color: rgb(247, 243, 243);
+  border-radius: 4px;
+  box-shadow: 5px 5px 10px rgba(70, 68, 68, 0.763);
+  padding: 20px;
+  font-weight: 600;
+}
+.form-send .labels-container .upload-style:hover {
+  border-bottom: 2px solid red;
+  background-color: rgb(205, 205, 205);
 }
 .form-send .step {
   display: none;
@@ -171,8 +231,34 @@ body {
   justify-content: end;
   gap: 20px;
   padding: 20px;
-  background-color: grey;
+  background-color: rgb(0, 0, 0);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   border: 2px solid black;
+}
+.form-send .step-buttons button {
+  border-radius: 8px;
+  border: 2px solid rgb(255, 255, 255);
+  transition: 0.3s all;
+}
+.form-send .step-buttons button:nth-child(1) {
+  background-color: rgb(185, 5, 5);
+  color: white;
+}
+.form-send .step-buttons button:nth-child(1):hover {
+  background-color: rgb(255, 0, 0);
+}
+.form-send .step-buttons button:nth-child(2) {
+  background-color: rgb(0, 23, 128);
+  color: white;
+}
+.form-send .step-buttons button:nth-child(2):hover {
+  background-color: rgb(21, 143, 219);
+}
+.form-send .step-buttons button:nth-child(3) {
+  background-color: green;
+  color: white;
+}
+.form-send .step-buttons button:nth-child(3):hover {
+  background-color: rgb(5, 202, 5);
 }

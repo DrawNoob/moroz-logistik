@@ -1,24 +1,3 @@
-// FORM Code _________________________________________________________________________
-let currentStep = 0;
-const steps = document.querySelectorAll('.step');
-const nextBtn = document.getElementById('nextBtn');
-const prevBtn = document.getElementById('prevBtn');
-const submitBtn = document.getElementById('submitBtn');
-
-function showStep(step) {
-    steps.forEach((stepDiv, index) => {
-        stepDiv.classList.toggle('active', index === step);
-    });
-    prevBtn.style.display = step === 0 ? 'none' : 'inline';
-    nextBtn.style.display = step === steps.length - 1 ? 'none' : 'inline';
-    submitBtn.style.display = step === steps.length - 1 ? 'inline' : 'none';
-}
-
-function changeStep(stepChange) {
-    currentStep += stepChange;
-    showStep(currentStep);
-}
-
 // REDUCE image size _________________________________________________________________
 async function resizeImage(file, maxSizeInKB, maxWidth) {
     return new Promise((resolve, reject) => {
@@ -143,3 +122,6 @@ async function sendEmail() {
         });
 }
 
+
+
+// SIPMLE Form validation ____________________________________________________________
