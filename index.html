@@ -12,32 +12,40 @@
     
     <!---------------------------------------------- HEADER ---------------------------------------------->
     <header>
-        <div class="main-header-container d-flex justify-content-between gap-5 px-5 align-items-center">
-            <div class="d-flex align-items-center gap-5 mob-spec">
-                <a href="index.html">
-                    <img class="header-logo-img" src="assets/main-logo.png" alt="">
-                </a>
-                <div class="d-flex gap-3 nav-icons-block align-items-center justify-content-center">
-                    <a href="#"><img class="nav-social-icon" src="./assets/facebook.png" alt=""></a>
-                    <a href="#"><img class="nav-social-icon" src="./assets/instagram.png" alt=""></a>
-                    <a href="#"><img class="nav-social-icon" src="./assets/twitter.png" alt=""></a>
+        <div class="main-header-container d-flex flex-column align-items-center">
+            <img class="main-header-logo" src="./assets/main-logo.png" alt="">
+            <div class="top-header-line d-flex align-items-center justify-content-between">
+                <div class="header-quote">
+                    <i>"Erfolg hat drei Buchstaben: TUN." - Olexander Moroz</i>
+                    <!-- REAL AUTHOR: Johann Wolfgang von Goethe -->
+                </div>
+                <div class="social-media-icons">
+                    <a href="#"><img src="./assets/facebook.png" alt="" class="social-media-icon"></a>
+                    <a href="#"><img src="./assets/instagram.png" alt="" class="social-media-icon"></a>
+                    <a href="#"><img src="./assets/twitter.png" alt="" class="social-media-icon"></a>
                 </div>
             </div>
-            <ul class="d-flex h-100 gap-5 justify-content-center align-items-center mb-0 mob-none">
-                <li><a class="nav-link-header link_animation" href="index.html">Home</a></li>
-                <li><a class="nav-link-header link_animation" href="#">About Us</a></li>
-                <li><a class="nav-link-header link_animation" href="#">Services</a></li>
-                <li><a class="nav-link-header link_animation" href="#">Contact</a></li>
-                <li><a class="text-black bold link_animation" href="tel:+11 333 777 1234">+11 333 777 1234</a></li>
-            </ul>
+            <div class="bottom-header-line d-flex align-items-center justify-content-between">
+                <ul class="navigation-header mb-0">
+                    <li class="link_animation"><a class="text-white active" href="index.html">Home</a></li>
+                    <li class="link_animation"><a class="text-white" href="">About Us</a></li>
+                    <li class="link_animation"><a class="text-white" href="">Services</a></li>
+                    <li class="link_animation"><a class="text-white" href="">Contact Us</a></li>
+                </ul>
+                <a href="tel:+44 978 456 3377" class="phone-number-header">
+                    <img class="call-icon" src="./assets/call.gif" alt="">
+                    +44 978 456 3377
+                </a>
+            </div>
         </div>
     </header>
 
     <!----------------------------------------------  MAIN  ---------------------------------------------->
     <main>
-        <div class="d-flex justify-content-center">
+        <div class="main-bg-with-form d-flex flex-column">
+            <h1 class="main-bg-title">The Most <br> Recommended <br> <span>Frankfurt</span> Movers</h1>
             <!-- ФОРМА ДЛЯ КЛІЄНТА -->
-            <form id="multiStepForm" class="form-send d-flex flex-column" enctype="multipart/form-data">
+            <form id="multiStepForm" class="form-send d-flex flex-column mx-auto" enctype="multipart/form-data">
                 <!-- Наскільки Заповнене Житло -->
                 <div class="step active">
                     <p class="bold question-title">Wie voll ist Ihr Zuhause?</p>
@@ -127,6 +135,8 @@
                 </div>
             </form>
         </div>
+
+
     </main>
 
     <!---------------------------------------------- FOOTER ---------------------------------------------->

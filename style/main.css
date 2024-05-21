@@ -180,57 +180,100 @@ input[type=file] {
 }
 
 .main-header-container {
-  background-color: rgb(255, 255, 255);
-  border-bottom: 3px solid black;
-  height: 75px;
+  height: 80px;
 }
-@media (max-width: 960px) {
-  .main-header-container {
-    width: 100%;
-    padding: 0 20px !important;
-  }
+.main-header-container .main-header-logo {
+  width: auto;
+  height: 151px;
+  position: absolute;
+  background-color: transparent;
+  top: 1px;
 }
-@media (max-width: 960px) {
-  .main-header-container .mob-spec {
-    width: 100%;
-    justify-content: space-between;
-  }
+.main-header-container .top-header-line {
+  width: 100%;
+  height: 40px;
+  padding: 0 5% 0 15%;
 }
-.main-header-container .mob-spec .nav-icons-block {
-  background: red;
-  height: 75px;
-  width: 200px;
-  border-bottom: 2px solid black;
+.main-header-container .top-header-line .header-quote {
+  font-weight: 600;
+  font-size: 1vw;
 }
-@media (max-width: 960px) {
-  .main-header-container .mob-spec .nav-icons-block {
-    width: 55%;
-  }
+.main-header-container .top-header-line .social-media-icons {
+  display: flex;
+  gap: 10px;
 }
-.main-header-container .mob-spec .nav-icons-block .nav-social-icon {
-  width: 40px;
-  border-radius: 50%;
+.main-header-container .top-header-line .social-media-icons .social-media-icon {
+  width: 28px;
+  height: 28px;
   transition: 0.3s all;
+  border-radius: 50%;
   border: 2px solid transparent;
 }
-.main-header-container .mob-spec .nav-icons-block .nav-social-icon:hover {
+.main-header-container .top-header-line .social-media-icons .social-media-icon:hover {
   transform: scale(1.1);
-  border: 2px solid white;
-  box-shadow: 0 0 10px rgb(255, 255, 255);
+  border: 2px solid rgb(255, 217, 0);
 }
-.main-header-container .nav-link-header {
-  color: red;
+.main-header-container .bottom-header-line {
+  width: 100%;
+  height: 40px;
+  padding: 0 5% 0 15%;
+  background: black;
+  border-bottom: 2px solid white;
+  color: white;
+}
+.main-header-container .bottom-header-line .navigation-header {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+.main-header-container .bottom-header-line .navigation-header .active {
+  color: rgb(255, 217, 0) !important;
+  font-weight: 600;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  padding-bottom: 2px;
+}
+.main-header-container .bottom-header-line .navigation-header li {
+  padding-bottom: 4px;
+}
+.main-header-container .bottom-header-line .phone-number-header {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 217, 0);
+  padding: 0 30px 0 20px;
+  transition: 0.3s all;
+  color: rgb(0, 0, 0);
   font-weight: 600;
 }
-.main-header-container .header-logo-img {
-  width: 50px;
-  transition: 0.3s all;
+.main-header-container .bottom-header-line .phone-number-header .call-icon {
+  width: 30px;
+  height: 30px;
+  display: none;
+  margin-right: 5px;
 }
-.main-header-container .header-logo-img:hover {
-  transform: scale(1.1);
+.main-header-container .bottom-header-line .phone-number-header:hover {
+  text-decoration: underline;
 }
-.main-header-container ul {
-  list-style: none;
+.main-header-container .bottom-header-line .phone-number-header:hover .call-icon {
+  display: block;
+}
+
+.main-bg-with-form {
+  background-image: url(./../assets/main-bg.png);
+  background-size: cover;
+}
+.main-bg-with-form .main-bg-title {
+  color: white;
+  font-weight: 700;
+  text-shadow: 0 0 10px black;
+  font-size: 64px;
+  margin-left: 15%;
+  margin-top: 50px;
+}
+.main-bg-with-form .main-bg-title span {
+  color: rgb(255, 217, 0);
 }
 
 .form-send {
@@ -238,6 +281,7 @@ input[type=file] {
   margin-top: 100px;
   border: 2px solid black;
   border-radius: 22px;
+  background-color: white;
 }
 @media (max-width: 960px) {
   .form-send {
@@ -246,8 +290,10 @@ input[type=file] {
   }
 }
 .form-send .question-title {
-  background-color: red;
+  background-color: rgb(255, 217, 0);
   color: white;
+  text-shadow: 0 0 10px black;
+  text-align: center;
   padding: 20px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
