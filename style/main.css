@@ -6,6 +6,8 @@
 }
 
 *, *::before, *::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -335,13 +337,10 @@ input[type=file] {
 .form-send .question-title-block {
   width: 100%;
   background: white;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   padding: 8px 0 0;
   border: 1px solid black;
 }
 .form-send .question-title-block .question-title {
-  width: -moz-max-content;
   width: max-content;
   background-color: rgb(0, 0, 0);
   color: white;
@@ -350,8 +349,6 @@ input[type=file] {
   text-align: center;
   padding: 12px 20px;
   font-size: 1.3vw;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
   margin-bottom: 0;
 }
 @media (max-width: 960px) {
@@ -362,8 +359,6 @@ input[type=file] {
 }
 .form-send .labels-box {
   background: rgba(255, 255, 255, 0.3);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
   border: 1px solid black;
   border-top: none;
 }
@@ -384,7 +379,6 @@ input[type=file] {
 @media (max-width: 960px) {
   .form-send .labels-box .labels-container {
     height: auto;
-    max-height: -moz-max-content !important;
     max-height: max-content !important;
   }
 }
@@ -397,7 +391,6 @@ input[type=file] {
 }
 .form-send .labels-box .labels-container .form-labels-style {
   font-weight: 600;
-  width: -moz-max-content;
   width: max-content;
   gap: 10px;
   border-bottom: 2px solid black;
@@ -491,7 +484,6 @@ input[type=file] {
 }
 .form-send .step-buttons button {
   width: 200px;
-  border-radius: 8px;
   border: 1px solid rgb(0, 0, 0);
   transition: 0.3s all;
 }
@@ -527,4 +519,4 @@ input[type=file] {
 }
 .form-send .step-buttons button:nth-child(3):hover {
   background-color: rgb(5, 202, 5);
-}/*# sourceMappingURL=main.css.map */
+}

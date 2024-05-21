@@ -137,8 +137,6 @@
     .question-title-block{
         width: 100%;
         background: white;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
         padding: 8px 0 0;
         border: 1px solid black;
         .question-title{
@@ -150,8 +148,6 @@
             text-align: center;
             padding: 12px 20px;
             font-size: 1.3vw;
-            border-top-left-radius: 8px;
-            border-top-right-radius: 8px;
             margin-bottom: 0;
             @media (max-width: 960px){
                 max-width: 100%;
@@ -161,8 +157,6 @@
     }
     .labels-box{
         background: rgba(255, 255, 255, 0.3);
-        border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
         border: 1px solid black;
         border-top: none;
         @media (max-width: 960px){
@@ -275,7 +269,6 @@
         }
         button{
             width: 200px;
-            border-radius: 8px;
             border: 1px solid rgb(0, 0, 0);
             transition: 0.3s all;
             @media (max-width: 1260px){
