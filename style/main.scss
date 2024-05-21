@@ -16,7 +16,7 @@
     .top-header-line{
         width: 100%;
         height: 40px;
-        padding: 0 5% 0 15%;
+        padding: 0 10%;
         .header-quote{
             font-weight: 600;
             font-size: 1vw;
@@ -32,7 +32,7 @@
                 border: 2px solid transparent;
                 &:hover{
                     transform: scale(1.1);
-                    border: 2px solid rgb(255, 217, 0);;
+                    border: 2px solid rgb(228, 173, 8);;
                 }
             }
         }
@@ -40,9 +40,8 @@
     .bottom-header-line{
         width: 100%;
         height: 40px;
-        padding: 0 5% 0 15%;
+        padding: 0 10%;
         background: black;
-        border-bottom: 2px solid white;
         color: white;
         .navigation-header{
             list-style: none;
@@ -64,7 +63,7 @@
             height: 40px;
             display: flex;
             align-items: center;
-            background-color: rgb(255, 217, 0);;
+            background-color: rgb(67, 228, 8);;
             padding: 0 30px 0 20px;
             transition: 0.3s all;
             color: rgb(0, 0, 0);
@@ -77,6 +76,7 @@
             }
             &:hover{
                 text-decoration: underline;
+                background-color: rgb(255, 217, 0);
                 .call-icon{
                     display: block;
                 }
@@ -89,84 +89,175 @@
 .main-bg-with-form{
     background-image: url(./../assets/main-bg.png);
     background-size: cover;
+    background-position: top;
+    padding-bottom: 50px;
+    @media (max-width: 960px){
+        background-position: right;
+    }
     .main-bg-title{
         color: white;
         font-weight: 700;
         text-shadow: 0 0 10px black;
-        font-size: 64px;
-        margin-left: 15%;
-        margin-top: 50px;
+        font-size: 58px;
+        margin: 0 10%;
+        margin-top: 75px;
+        text-align: end;
+        @media (max-width: 1260px){
+            margin-left: 5%;
+            font-size: 46px;
+            margin-top: 100px;
+            text-align: center;
+            @media (max-width: 960px){
+                margin: 0%;
+                margin-top: 100px;
+                font-size: 38px;
+                @media (max-width: 480px){
+                    margin-left: 0%;
+                    font-size: 26px;
+                }
+            }
+        }
         span{
-            color: rgb(255, 217, 0);
+            color: rgb(255, 217, 0);;
         }
     }
 }
 .form-send{
-    width: 1000px;
-    margin-top: 100px;
-    border: 2px solid black;
+    width: 80%;
+    margin-top: 250px;
     border-radius: 22px;
-    background-color: white;
-    @media (max-width: 960px){
+    @media (max-width: 1260px){
         width: 90%;
         margin-top: 10px;
+        @media (max-width: 960px){
+            width: 95%;
+            margin-top: 10px;
+        }
     }
-    .question-title{
-        background-color: rgb(255, 217, 0);
-        color: white;
-        text-shadow: 0 0 10px black;
-        text-align: center;
-        padding: 20px;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-        margin-bottom: 0;
-    }
-    .labels-container{
-        padding: 20px;
-        display: flex;
-        gap: 30px;
+    .question-title-block{
         width: 100%;
-        justify-content: space-between;
-        .input-field-form{
-            padding: 10px;
-            background-color: rgb(247, 243, 243);
-            border-radius: 4px;
-            box-shadow: 5px 5px 10px rgba(70, 68, 68, 0.763);
-            border: 1px solid black;
-        }
-        .form-labels-style{
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border-bottom: 2px solid black;
-            padding: 10px;
-            background-color: rgb(247, 243, 243);
-            border-radius: 4px;
-            box-shadow: 5px 5px 10px rgba(70, 68, 68, 0.763);
-            &:hover{
-                border-color: red;
-                cursor: pointer;
-                background-color: rgb(205, 205, 205);
-            }
-            input{
-                cursor: pointer;
-                width: 20px;
-                height: 20px;
-            }
-        }
-        .upload-style{
-            background-color: rgb(247, 243, 243);
-            border-radius: 4px;
-            box-shadow: 5px 5px 10px rgba(70, 68, 68, 0.763);
-            padding: 20px;
-            font-weight: 600;
-            &:hover{
-                border-bottom: 2px solid red;
-                background-color: rgb(205, 205, 205);
+        background: white;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        padding: 8px 0 0;
+        border: 1px solid black;
+        .question-title{
+            width: max-content;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-shadow: 0 0 5px black;
+            box-shadow: 0 0 10px black;
+            text-align: center;
+            padding: 12px 20px;
+            font-size: 1.3vw;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            margin-bottom: 0;
+            @media (max-width: 960px){
+                max-width: 100%;
+                font-size: 4vw;
             }
         }
     }
+    .labels-box{
+        background: rgba(255, 255, 255, 0.3);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        border: 1px solid black;
+        border-top: none;
+        @media (max-width: 960px){
+            background: rgba(255, 255, 255, 0.9);
+        }
+        .labels-container{
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            width: 100%;
+            height: 220px;
+            max-height: 220px !important;
+            @media (max-width: 960px){
+                height: auto;
+                max-height: max-content !important;
+            }
+            .input-field-form{
+                padding: 10px;
+                background-color: rgb(247, 243, 243);
+                border-radius: 4px;
+                box-shadow: 5px 5px 10px rgba(70, 68, 68, 0.763);
+                border: 1px solid black;
+            }
+            .form-labels-style{
+                font-weight: 600;
+                width: max-content;
+                gap: 10px;
+                border-bottom: 2px solid black;
+                padding: 10px;
+                border: 1px solid transparent;
+                background-color: rgb(247, 243, 243);
+                border-radius: 4px;
+                font-size: 1vw;
+                transition: 0.2s all;
+                box-shadow: 5px 5px 10px rgba(70, 68, 68, 0.763);
+                @media (max-width: 1260px){
+                    font-size: 1.5vw;
+                    @media (max-width: 960px){
+                        font-size: 6vw;
+                    }
+                }
+                .size-house-img{
+                    width: 200px;
+                    margin: 0px auto;
+                    @media (max-width: 1260px){
+                        width: 300px;
+                        @media (max-width: 960px){
+                            width: 200px;
+                        }
+                    }
+                }
+                &:hover{
+                    border: 1px solid black;
+                    cursor: pointer;
+                    background: rgb(0, 0, 0);
+                    color: white;
+                }
+                input{
+                    cursor: pointer;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+            .upload-style{
+                background-color: rgb(247, 243, 243);
+                border-radius: 4px;
+                box-shadow: 5px 5px 10px rgba(70, 68, 68, 0.763);
+                padding: 20px;
+                font-weight: 600;
+                .upload-logo{
+                    width: 70px;
+                    height: 70px;
+                }
+                span{
+                    padding: 12px 20px;
+                    border-radius: 8px;
+                    border: 1px solid black;                    
+                    background: rgb(0, 0, 0);
+                    color: white;
+                }
+                &:hover{
+                    border-bottom: 3px solid rgb(228, 173, 8);
+                    background-color: rgb(205, 205, 205);
+                    span{
+                        background: rgb(228, 173, 8);
+                        color: black;
+                        text-shadow: 0 0 10px rgb(236, 231, 231);
+                    }
+                }
+            }
+        }
+    }
+
+
     .step {
         display: none;
     }
@@ -178,17 +269,21 @@
         display: flex;
         justify-content: end;
         gap: 20px;
-        padding: 20px;
-        background-color: rgb(0, 0, 0);
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
-        border: 2px solid black;
+        margin-top: 10px;
+        @media (max-width: 960px){
+            width: 100%;
+        }
         button{
+            width: 200px;
             border-radius: 8px;
-            border: 2px solid rgb(255, 255, 255);
+            border: 1px solid rgb(0, 0, 0);
             transition: 0.3s all;
-            @media (max-width: 960px){
-                width: 45%;
+            @media (max-width: 1260px){
+                font-size: 1.5vw;
+                @media (max-width: 960px){
+                    font-size: 6vw;
+                    width: 50%;
+                }
             }
             &:nth-child(1){
                 background-color: rgb(185, 5, 5);
@@ -198,10 +293,11 @@
                 }
             }
             &:nth-child(2){
-                background-color: rgb(0, 23, 128);
-                color: white;
+                background: white;
+                color: black;
                 &:hover{
-                    background-color: rgb(21, 143, 219);
+                    background: black;
+                    color: white;
                 }
             }
             &:nth-child(3){

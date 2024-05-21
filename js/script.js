@@ -124,4 +124,3 @@ async function sendEmail() {
 
 
 
-// SIPMLE Form validation ____________________________________________________________
