@@ -30,6 +30,11 @@
         display: none !important;
     }
 }
+.desc-none{
+    @media (min-width: 960px){
+        display: none !important;
+    }
+}
 .w-5{
     width: 5% !important;
 }

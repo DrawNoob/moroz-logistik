@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="style/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
-    <title>Moroz Logistik</title>
-</head>
-<body>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <title>Moroz Logistik</title>
+    </head>
+    <body>
     
     <!---------------------------------------------- HEADER ---------------------------------------------->
     <header>
@@ -28,7 +35,7 @@
             <div class="bottom-header-line d-flex align-items-center justify-content-between mob-none">
                 <ul class="navigation-header mb-0">
                     <li class="link_animation"><a class="text-white active" href="index.html">Startseite</a></li>
-                    <li class="link_animation"><a class="text-white" href="">Über uns</a></li>
+                    <li class="link_animation"><a class="text-white" href="#info-place">Über uns</a></li>
                     <li class="link_animation"><a class="text-white" href="">Dienstleistungen</a></li>
                     <li class="link_animation"><a class="text-white" href="">Kontaktieren Sie uns</a></li>
                 </ul>
@@ -42,10 +49,15 @@
 
     <!----------------------------------------------  MAIN  ---------------------------------------------->
     <main>
+        <!-- Main Beggining of Page-->
         <div class="main-bg-with-form d-flex flex-column">
-            <h1 class="main-bg-title">Am meisten <br> Empfohlen <span>Frankfurter</span> <br> Umzugsunternehmen</h1>
+            <h1 class="main-bg-title scroll_animation_right">
+                Am meisten <br> Empfohlen <span>Frankfurter</span> <br> Umzugsunternehmen <br><br>
+                <a href="#info-place"><img class="gif-down" src="./assets/down.gif" alt=""></a><span class="span-2 mob-none">klicken Sie hier</span>
+            </h1>
+            
             <!-- ФОРМА ДЛЯ КЛІЄНТА -->
-            <form id="multiStepForm" class="form-send d-flex flex-column mx-auto" enctype="multipart/form-data">
+            <form id="multiStepForm" class="form-send d-flex flex-column mx-auto scroll_animation_right" enctype="multipart/form-data">
                 <!-- Наскільки Заповнене Житло -->
                 <div class="step active">
                     <div class="question-title-block">
@@ -240,20 +252,213 @@
                 </div>
             </form>
         </div>
-
-
+        <!-- Part with small info -->
+        <div class="info-place pb-5" id="info-place">
+            <h2 class="info-title-1 scroll_animation_right">Wir sind Ihr Partner im Frankfurter.</h2>
+            <h3 class="info-title-2 scroll_animation_left">Haushaltsauflösungen, Geschäftsauflösungen, Seniorenumzüge, Einkauf von Nachlässen, Entrümpelungen, Auflösung von Messi- Haushalten…</h3>
+            <p class="homepage-text scroll_animation_right">Wenn Sie mehr als nur eine einfache Entrümpelung wünschen und sicherstellen möchten, dass Ihre Gegenstände sorgfältig behandelt und möglicherweise an soziale Einrichtungen weitergegeben werden, und der Müll umweltgerecht entsorgt wird, sind Sie bei uns genau richtig. <br><br>
+            Ob durch einen Umzug, einen Todesfall in der Familie oder die Geschäftsaufgabe, wir unterstützen Sie bei der Auflösung Ihres Haushalts oder Unternehmens. Zunächst führen wir eine kostenfreie Besichtigung durch, um Ihnen einen genauen Preis zu nennen (unser Angebot basiert auf der Menge der Gegenstände bzw. dem geschätzten Gewicht). Anschließend prüfen wir Möbel und andere gut erhaltene Gegenstände, die wir verkaufen können, und ziehen deren Wert vom Gesamtpreis ab. Schließlich erhalten Sie von uns ein schriftliches Angebot zum Festpreis ohne versteckte Kosten. <br><br>
+            Wir üben unseren Beruf mit Leidenschaft und Fairness aus. Wir schenken den Dingen die notwendige Aufmerksamkeit und versuchen, so vielen Gegenständen wie möglich ein zweites Leben zu ermöglichen. <br><br>
+            Verlassen Sie sich auf unseren schnellen und professionellen Service bei Haushaltsauflösungen im gesamten Rhein-Main-Gebiet und Umgebung, einschließlich Rodgau, Rödermark, Darmstadt, Hanau, Alzenau, Dieburg, Frankfurt, Offenbach, Seligenstadt, Hainburg, Taunus und Odenwaldkreis.
+            </p>
+        </div>
+        <!-- Swiper Slider -->
+        <div class="swiper-full-container py-5">
+            <h3 class="swiper-title pb-4">
+                Unser Job vorher und nachher:
+            </h3>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img class="w-100" src="./assets/example-1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="w-100" src="./assets/example-2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="w-100" src="./assets/example-3.jpg" alt=""></div>
+                </div>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+        <!-- Category of works - 1 -->
+        <div class="container d-flex mob-col gap-5 justify-content-center main-work-category pt-5">
+            <!-- Item Work Category -->
+            <div class="item-of-work p-3 d-flex mob-w-100 flex-column gap-3 align-items-center">
+                <img class="image-work-category" src="./assets/map-icon.svg" alt="Ico">
+                <h5 class="title-work-category">FRANKFURTER UND WEITER</h5>
+                <p class="text-center text-work-category">
+                    Hauptsächlich sind wir im Rhein-Main Gebiet und Landkreis 
+                    Offenbach tätig. Aber für unsere guten Kunden haben wir 
+                    selbstverständlich auch schon weitere Strecken zurückgelegt. 
+                    Sprechen Sie uns an.
+                </p>
+            </div>
+            <!-- Item Work Category -->
+            <div class="item-of-work p-3 d-flex mob-w-100 flex-column gap-3 align-items-center">
+                <img class="image-work-category" src="./assets/pig-icon.svg" alt="Ico">
+                <h5 class="title-work-category">ANRECHNUNG</h5>
+                <p class="text-center text-work-category">
+                    Bereits bei der Preisgestaltung berücksichtigen wir Möbel und Gegenstände, die einen 
+                    Wiederverkaufswert haben. Diese werden von uns zu fairen Preisen veräußert.
+                </p>
+            </div>
+            <!-- Item Work Category -->
+            <div class="item-of-work p-3 d-flex mob-w-100 flex-column gap-3 align-items-center">
+                <img class="image-work-category" src="./assets/trash-icon.svg" alt="Ico">
+                <h5 class="title-work-category">ENTSORGUNG</h5>
+                <p class="text-center text-work-category">
+                    Bei Abfallprodukten und Müll sorgen wir für eine 
+                    umweltgerechte Entsorgung, die bereits in den Angeboten enthalten ist.
+                </p>
+            </div>
+        </div>
+        <!-- Category of works - 2 -->
+        <div class="container d-flex mob-col gap-5 justify-content-center main-work-category pt-5">
+            <!-- Item Work Category -->
+            <div class="item-of-work p-3 mob-w-100 d-flex flex-column gap-3 align-items-center">
+                <img class="image-work-category" src="./assets/partner-icon.svg" alt="Ico">
+                <h5 class="title-work-category">SOZIALE PARTNER</h5>
+                <p class="text-center text-work-category">
+                    Gebrauchte Möbel, Bücher, Schallplatten und vieles mehr 
+                    geben wir teilweise an unsere sozialen Partner weiter, um 
+                    damit bedürftigen Menschen eine Freude zu bereiten.
+                </p>
+            </div>
+            <!-- Item Work Category -->
+            <div class="item-of-work p-3 mob-w-100 d-flex flex-column gap-3 align-items-center">
+                <img class="image-work-category" src="./assets/clear-icon.svg" alt="Ico">
+                <h5 class="title-work-category">RÜCKFÜHRUNG DER WOHNUNG</h5>
+                <p class="text-center text-work-category">
+                    Raumschaffen Cufflic bringt Ihre Wohnung in den ursprünglichen Zustand zurück, 
+                    einschließlich der Entfernung von Tapeten und Böden aller Art.
+                </p>
+            </div>
+            <!-- Item Work Category -->
+            <div class="item-of-work p-3 mob-w-100 d-flex flex-column gap-3 align-items-center">
+                <img class="image-work-category" src="./assets/delphi-icon.svg" alt="Ico">
+                <h5 class="title-work-category">WOCHENENDE</h5>
+                <p class="text-center text-work-category">
+                    Wir bieten unseren Kunden kurzfristige Termine an, 
+                    selbstverständlich auch am Wochenende.
+                </p>
+            </div>
+        </div>
+        <!-- Category of works - 3 -->
+        <div class="container d-flex mob-col gap-5 justify-content-center main-work-category py-5">
+            <!-- Item Work Category -->
+            <div class="item-of-work p-3 mob-w-100 d-flex flex-column gap-3 align-items-center">
+                <img class="image-work-category" src="./assets/car-icon.svg" alt="Ico">
+                <h5 class="title-work-category">Umzüge</h5>
+                <p class="text-center text-work-category">
+                    Moroz logistik organisiert Ihren Umzug effizient 
+                    und zuverlässig, inklusive Transport und Möbelmontage.
+                </p>
+            </div>
+            <!-- Item Work Category -->
+            <div class="item-of-work p-3 mob-w-100 d-flex flex-column gap-3 align-items-center">
+                <img class="image-work-category" src="./assets/free-icon.svg" alt="Ico">
+                <h5 class="title-work-category">Reparatur</h5>
+                <p class="text-center text-work-category">
+                    Moroz logistik bietet fachgerechte Reparaturen für Wohnung und , 
+                    um deren Lebensdauer zu verlängern und Funktionalität wiederherzustellen.
+                </p>
+            </div>
+        </div>
+        <!-- Accordion Part -->
+        <div class="accordion-full-block">
+            <div class="accordion_image_part">
+                <div class="accordion_part scroll_animation">
+                    <h3>Strategie und <b>Kreativität<span>.</span></b></h3>
+                    <p class="desc-none">Im Geschäftsleben ist die Synergie zwischen Strategie und Kreativität nichts weniger als eine Supermacht. Wenn diese beiden Elemente effektiv kombiniert werden, können sie Unternehmen zu neuen Höhen führen und sie von der Konkurrenz abheben.</p>
+                    <div class="accordion">
+                        <!-- Accordion Item -->
+                        <div class="accordion_item">
+                            <div class="accordion_head_inner">
+                                <h2 class="accordion_header">Wie wird meine Wohnung danach aussehen?</h2>
+                                <img class="accordion_item_img" src="assets/down-arrow2.png" alt="">
+                            </div>
+                            <div class="accordion-content">
+                                <p>Wir arbeiten sehr sauber und ordentlich. Wir bieten Ihnen die Entfernung von Tapeten und 
+                                    Bodenbelägen jeglicher Art an. Gerne übergeben wir Ihre Wohnung besenrein direkt an den 
+                                    Vermieter oder Eigentümer. Dafür müssen Sie nicht vor Ort sein.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="accordion_item">
+                            <div class="accordion_head_inner">
+                                <h2 class="accordion_header">Umzugsservice: Zeitrahmen und Leistungsumfang</h2>
+                                <img class="accordion_item_img" src="assets/down-arrow2.png" alt="">
+                            </div>
+                            <div class="accordion-content">
+                                <p>
+                                    Für den Umzugsservice gilt dasselbe Zeitfenster. In der Regel dauert eine gründliche, 
+                                    normale Wohnungsauflösung durch uns einen Tag bis maximal drei Tage. 
+                                    Eine Standard 3-Zimmer-Wohnung sollte beispielsweise innerhalb eines Tages komplett geräumt sein.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="accordion_item">
+                            <div class="accordion_head_inner">
+                                <h2 class="accordion_header">Efficient Relocation Solutions</h2>
+                                <img class="accordion_item_img" src="assets/down-arrow2.png" alt="">
+                            </div>
+                            <div class="accordion-content">
+                                <p>Our comprehensive moving service ensures a seamless transition to your new location. 
+                                    From packing to unpacking, we handle every aspect of your relocation efficiently, 
+                                    allowing you to focus on settling in comfortably.</p>
+                            </div>
+                        </div>
+                        <!-- Accordion Item -->
+                        <div class="accordion_item">
+                            <div class="accordion_head_inner">
+                                <h2 class="accordion_header">Tailored Moving Solutions for Every Need</h2>
+                                <img class="accordion_item_img" src="assets/down-arrow2.png" alt="">
+                            </div>
+                            <div class="accordion-content">
+                                <p>With our tailored moving solutions, we cater to your specific requirements, ensuring a stress-free moving experience. 
+                                    Whether it's across town or across the country, trust us to manage your move with precision and care.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="after_accordion_part scroll_animation">
+                    <p class="mob-none">Im Geschäftsleben ist die Synergie zwischen Strategie und Kreativität nichts weniger als eine Supermacht. Wenn diese beiden Elemente effektiv kombiniert werden, können sie Unternehmen zu neuen Höhen führen und sie von der Konkurrenz abheben.</p>
+                    <img class="mob-none" src="./assets/alex.jpg" alt="Girl in Headephone">
+                    <img class="desc-none" src="./assets/alex.jpg" alt="Girl in Headephone">
+                </div>
+            </div>
+        </div>
     </main>
 
     <!---------------------------------------------- FOOTER ---------------------------------------------->
     <footer>
         
     </footer>
-
-
     <!-- JS Script's here -->
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- SWIPER INIT -->
+    <script>
+        const swiper = new Swiper('.swiper', {
+            grabCursor: true,
+            effect: "creative",
+            autoplay: true,
+            speed: 1500,
+            loop: true,
+            creativeEffect: {
+                prev: {
+                shadow: true,
+                translate: ["-10%", 0, -1],
+                },
+                next: {
+                translate: ["100%", 0, 0],
+                },
+            },
+        });
+    </script>
+    <!-- FORM JS -->
     <script>
         (function() {
             emailjs.init('diEz9U4pmHMQHB9dx');

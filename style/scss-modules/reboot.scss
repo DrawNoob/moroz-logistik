@@ -52,7 +52,8 @@ body {
     min-width: 320px;
     font-weight: 300;
     font-size: 1.1vw;
-    overflow-x: hidden;
+    font-family: "Oswald", sans-serif !important;
+    overflow-x: hidden !important;
     @media (max-width: 960px){
       font-size: 4.4vw;
     }

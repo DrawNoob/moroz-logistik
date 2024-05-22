@@ -123,4 +123,70 @@ async function sendEmail() {
 }
 
 
+// SCROLL Animation _____________________________________________________________________
+// function onEntry(entry) {
+//     entry.forEach(change => {
+//       if (change.isIntersecting) {
+//         change.target.classList.add('element-show');
+//       }
+//     });
+//   }
 
+//   let options = { threshold: [0.5] };
+//   let observer = new IntersectionObserver(onEntry, options);
+//   let elements = document.querySelectorAll('.scroll_animation');
+//   for (let elm of elements) {
+//     observer.observe(elm);
+//   }
+
+//   let options1 = { threshold: [0.5] };
+//   let observer1 = new IntersectionObserver(onEntry, options1);
+//   let elements1 = document.querySelectorAll('.scroll_animation_right');
+//   for (let elm of elements1) {
+//     observer1.observe(elm);
+//   }
+
+//   let options2 = { threshold: [0.5] };
+//   let observer2 = new IntersectionObserver(onEntry, options2);
+//   let elements2 = document.querySelectorAll('.scroll_animation_left');
+//   for (let elm of elements2) {
+//     observer2.observe(elm);
+// }
+
+// Accordion _____________________________________________________________________________
+document.addEventListener('DOMContentLoaded', () => {
+    const accordion = document.querySelector('.accordion');
+    const firstItem = accordion.querySelector('.accordion_item:first-child');
+    const firstContent = firstItem.querySelector('.accordion-content');
+    const firstArrowImage = firstItem.querySelector('.accordion_item_img');
+  
+    // Set the first accordion item to be open by default
+    firstContent.style.maxHeight = firstContent.scrollHeight + 'px';
+    firstArrowImage.style.transform = 'rotate(180deg)';
+  
+    accordion.addEventListener('click', (event) => {
+      const item = event.target.closest('.accordion_item');
+      if (!item) return;
+  
+      const content = item.querySelector('.accordion-content');
+      const arrowImage = item.querySelector('.accordion_item_img');
+  
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        arrowImage.style.transform = 'rotate(0deg)';
+      } else {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        arrowImage.style.transform = 'rotate(180deg)';
+      }
+  
+      const otherItems = Array.from(accordion.querySelectorAll('.accordion_item')).filter(
+        (otherItem) => otherItem !== item
+      );
+  
+      otherItems.forEach((otherItem) => {
+        otherItem.querySelector('.accordion-content').style.maxHeight = null;
+        otherItem.querySelector('.accordion_item_img').style.transform = 'rotate(0deg)';
+      });
+    });
+  });
+  
