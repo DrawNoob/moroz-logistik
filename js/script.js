@@ -1,3 +1,12 @@
+// Burger
+let menuBtn = document.querySelector('.menu-btn');
+let menu = document.querySelector('.menu');
+
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
+
 // REDUCE image size _________________________________________________________________
 async function resizeImage(file, maxSizeInKB, maxWidth) {
     return new Promise((resolve, reject) => {

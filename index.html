@@ -20,7 +20,6 @@
     <!---------------------------------------------- HEADER ---------------------------------------------->
     <header>
         <div class="main-header-container d-flex flex-column align-items-center">
-            <img class="main-header-logo" src="./assets/main-logo.png" alt="">
             <div class="top-header-line d-flex align-items-center justify-content-between mob-none">
                 <div class="header-quote">
                     <i>"Erfolg hat drei Buchstaben: TUN." - Olexander Moroz</i>
@@ -36,13 +35,29 @@
                 <ul class="navigation-header mb-0">
                     <li class="link_animation"><a class="text-white active" href="index.html">Startseite</a></li>
                     <li class="link_animation"><a class="text-white" href="#info-place">Über uns</a></li>
-                    <li class="link_animation"><a class="text-white" href="">Dienstleistungen</a></li>
-                    <li class="link_animation"><a class="text-white" href="">Kontaktieren Sie uns</a></li>
+                    <li class="link_animation"><a class="text-white" href="#">Dienstleistungen</a></li>
+                    <li class="link_animation"><a class="text-white" href="#">Kontaktieren Sie uns</a></li>
                 </ul>
                 <a href="tel:+44 978 456 3377" class="phone-number-header">
                     <img class="call-icon" src="./assets/call.gif" alt="">
                     +44 978 456 3377
                 </a>
+            </div>
+            <!-- Burger -->
+            <div class="menu-btn desc-none">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul class="d-flex flex-column gap-5 text-center p-0">
+                        <li><a href="index.html">Startseite</a></li>
+                        <li><a href="#info-place">Über uns</a></li>
+                        <li><a href="#">Dienstleistungen</a></li>
+                        <li><a href="#">Kontaktieren Sie uns</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
@@ -51,10 +66,13 @@
     <main>
         <!-- Main Beggining of Page-->
         <div class="main-bg-with-form d-flex flex-column">
-            <h1 class="main-bg-title scroll_animation_right">
-                Am meisten <br> Empfohlen <span>Frankfurter</span> <br> Umzugsunternehmen <br><br>
-                <a href="#info-place"><img class="gif-down" src="./assets/down.gif" alt=""></a><span class="span-2 mob-none">klicken Sie hier</span>
-            </h1>
+            <div class="d-flex mob-col main-bg-block justify-content-between">
+                <img class="main-bg-logo" src="./assets/main-logo.png" alt="Logo">
+                <h1 class="main-bg-title scroll_animation_right">
+                    Am meisten <br> Empfohlen <span>Frankfurter</span> <br> Umzugsunternehmen <br><br>
+                    <a href="#info-place"><img class="gif-down" src="./assets/down.gif" alt=""></a><span class="span-2 mob-none">klicken Sie hier</span>
+                </h1>
+            </div>
             
             <!-- ФОРМА ДЛЯ КЛІЄНТА -->
             <form id="multiStepForm" class="form-send d-flex flex-column mx-auto scroll_animation_right" enctype="multipart/form-data">
@@ -67,7 +85,7 @@
                         <div class="labels-container mx-auto mob-col mob-w-100">
                             <!-- Item -->
                             <label class="form-labels-style d-flex flex-column justify-content-between mob-w-100">
-                                <img class="size-house-img" src="./assets/house-1.png" alt="">
+                                <img class="size-house-img" src="./assets/Minimalism.jpg" alt="">
                                 <div class="d-flex justify-content-center gap-3 align-items-center">
                                     <input type="radio" name="question1" value="Wenig" required>
                                     Wenig
@@ -75,7 +93,7 @@
                             </label>
                             <!-- Item -->
                             <label class="form-labels-style d-flex flex-column justify-content-between mob-w-100">
-                                <img class="size-house-img" src="./assets/house-2.png" alt="">
+                                <img class="size-house-img" src="./assets/Medium.jpg" alt="">
                                 <div class="d-flex justify-content-center gap-3 align-items-center">
                                     <input type="radio" name="question1" value="Mittel" required>
                                     Mittel
@@ -83,7 +101,7 @@
                             </label>
                             <!-- Item -->
                             <label class="form-labels-style d-flex flex-column justify-content-between mob-w-100">
-                                <img class="size-house-img" src="./assets/house-3.png" alt="">
+                                <img class="size-house-img" src="./assets/Hard.jpg" alt="">
                                 <div class="d-flex justify-content-center gap-3 align-items-center">
                                     <input type="radio" name="question1" value="Viel" required>
                                     Viel
@@ -91,7 +109,7 @@
                             </label>
                             <!-- Item -->
                             <label class="form-labels-style d-flex flex-column justify-content-between mob-w-100">
-                                <img class="size-house-img" src="./assets/house-4.png" alt="">
+                                <img class="size-house-img" src="./assets/Messi.jpg" alt="">
                                 <div class="d-flex justify-content-center gap-3 align-items-center">
                                     <input type="radio" name="question1" value="Messi" required>
                                     Messi
@@ -263,7 +281,7 @@
             </p>
         </div>
         <!-- Swiper Slider -->
-        <div class="swiper-full-container py-5">
+        <div class="swiper-full-container">
             <h3 class="swiper-title pb-4">
                 Unser Job vorher und nachher:
             </h3>
@@ -272,9 +290,10 @@
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img class="w-100" src="./assets/example-1.jpg" alt=""></div>
-                    <div class="swiper-slide"><img class="w-100" src="./assets/example-2.jpg" alt=""></div>
-                    <div class="swiper-slide"><img class="w-100" src="./assets/example-3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="w-100" src="./assets/Minimalism.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="w-100" src="./assets/Medium.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="w-100" src="./assets/Hard.jpg" alt=""></div>
+                    <div class="swiper-slide"><img class="w-100" src="./assets/Messi.jpg" alt=""></div>
                 </div>
                 <!-- If we need scrollbar -->
                 <div class="swiper-scrollbar"></div>
@@ -428,11 +447,33 @@
                 </div>
             </div>
         </div>
+        <div class="review-container py-5">
+
+        </div>
     </main>
 
     <!---------------------------------------------- FOOTER ---------------------------------------------->
     <footer>
-        
+        <div class="main-footer-container w-100 d-flex mob-col justify-content-between">
+            <div class="logo-footer d-flex w-25 mob-w-100">
+                <img class="footer-logo" src="./assets/main-logo.png" alt="">
+            </div>
+            <ul class="navigation-footer w-25 mb-0 d-flex flex-column gap-4 mob-w-100">
+                <li><a class="" href="index.html">Startseite</a></li>
+                <li><a class="" href="#info-place">Über uns</a></li>
+                <li><a class="" href="#">Dienstleistungen</a></li>
+                <li><a class="" href="#">Kontaktieren Sie uns</a></li>
+            </ul>
+            <div class="d-flex flex-column w-25 gap-3 align-items-end mob-w-100 foot-cont">
+                <div class="d-flex gap-3">
+                    <a href="#"><img src="./assets/facebook.png" alt="" class="social-media-icon"></a>
+                    <a href="#"><img src="./assets/instagram.png" alt="" class="social-media-icon"></a>
+                    <a href="#"><img src="./assets/twitter.png" alt="" class="social-media-icon"></a>
+                </div>
+                <p class="footer-contact mt-3"><a class="link_animation" href="tel:+44 978 456 3377">+44 978 456 3377</a></p>
+                <p class="footer-contact"><a class="link_animation" href="mailto::MorozLogistik@gmail.com">MorozLogistik@gmail.com</a></p>
+            </div>
+        </div>
     </footer>
     <!-- JS Script's here -->
     <script src="js/swiper-bundle.min.js"></script>

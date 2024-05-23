@@ -3,16 +3,11 @@
 @import "scss-modules/animations.scss";
 @import "scss-modules/bootstrap-custom.scss";
 
-// Custom Styles For Homepage
+// Custom Styles For Homepage:
+
+// HEADER ____________________________________________________________________________________
 .main-header-container{
     height: 80px;
-    .main-header-logo{
-        width: auto;
-        height: 151px;
-        position: absolute;
-        background-color: transparent;
-        top: 1px;
-    }
     .top-header-line{
         width: 100%;
         height: 40px;
@@ -84,8 +79,7 @@
         }
     }
 }
-
-// Styles - BG nad Form
+// MAIN ______________________________________________________________________________________
 .main-bg-with-form{
     background-image: url(./../assets/main-bg-family.jpg);
     background-size: cover;
@@ -94,44 +88,58 @@
     @media (max-width: 960px){
         background-position: right;
     }
-    .main-bg-title{
-        color: white;
-        font-weight: 700;
-        text-shadow: 0 0 10px black;
-        font-size: 58px;
+    .main-bg-block{
         margin: 0 10%;
-        margin-top: 75px;
-        text-align: end;
-        @media (max-width: 1260px){
-            margin-left: 5%;
-            font-size: 46px;
-            margin-top: 100px;
-            text-align: center;
-            @media (max-width: 960px){
-                margin: 0%;
-                margin-top: 100px;
-                font-size: 38px;
-                @media (max-width: 480px){
-                    margin-left: 0%;
-                    font-size: 26px;
-                }
+        margin-top: 25px;
+        @media (max-width: 960px){
+            align-items: center;
+        }
+        .main-bg-logo{
+            width: 150px;
+            height: max-content;
+            @media (max-width: 480px){
+                width: 200px;
             }
         }
-        span{
-            color: rgb(43, 171, 24);
-        }
-        .span-2{
-            font-size: 1.3vw !important;
+        .main-bg-title{
             color: white;
-            position: relative;
-            top: 10px;
-        }
-        .gif-down{
-            width: 120px;
-            height: 120px;
+            font-weight: 700;
+            text-shadow: 0 0 10px black;
+            font-size: 58px;
+            text-align: end;
+            @media (max-width: 1260px){
+                margin-left: 5%;
+                font-size: 46px;
+                margin-top: 100px;
+                text-align: center;
+                @media (max-width: 960px){
+                    margin: 0%;
+                    margin-top: 100px;
+                    font-size: 38px;
+                    @media (max-width: 480px){
+                        margin-left: 0%;
+                        font-size: 32px;
+                    }
+                }
+            }
+            span{
+                color: rgb(43, 171, 24);
+            }
+            .span-2{
+                font-size: 1.3vw !important;
+                color: white;
+                position: relative;
+                top: 10px;
+            }
+            .gif-down{
+                width: 120px;
+                height: 120px;
+            }
         }
     }
+
 }
+// Form Styles
 .form-send{
     width: 80%;
     margin-top: 150px;
@@ -218,7 +226,7 @@
                         @media (max-width: 1100px){
                             width: 150px;
                             @media (max-width: 960px){
-                                width: 200px;
+                                width: 100%;
                             }
                         }
                     }
@@ -317,7 +325,7 @@
         }
     }
 }
-
+// MainInformation
 .info-place{
     width: 50%;
     margin: 0px auto;
@@ -357,6 +365,7 @@
         }
     }
 }
+// Work Categories
 .main-work-category{
     &:nth-child(4){
         margin-top: 100px;
@@ -399,15 +408,20 @@
     }
 }
 // Swiper Styles
-
 .swiper-full-container{
     width: 100%;
-    background: #829b615b;
+    background-image: url(./../assets/wooden.jpg);
+    background-size: cover;
+    padding: 90px 0 !important;
+    @media (max-width: 960px){
+        padding: 40px 0 !important;
+    }
     .swiper-title{
         text-align: center;
         font-size: 2vw;
         font-weight: 500;
-        color: #3b462d;
+        color: #ffffff;
+        text-shadow: black;
         @media (max-width: 960px){
             font-size: 6vw;
         }
@@ -416,7 +430,7 @@
         width: 40%;
         height: max-content;
         border: 1px solid black;
-        box-shadow: 0 0 10px rgb(137, 134, 134);
+        box-shadow: 0 0 20px rgba(255, 123, 0, 0.581);
         @media (max-width: 1440px){
             width: 60%;
             @media (max-width: 960px){
@@ -425,13 +439,12 @@
         }
     }
 }
-
 // Accordion Part
 .accordion-full-block{
     width: 100%;
     display: flex;
     padding: 2.5em;
-    background: rgba(130, 155, 97, 0.3568627451);
+    background: rgba(134, 171, 86, 0.5);
     margin-top: 100px;
     @media (max-width: 960px){
         margin-top: 20px;
@@ -544,6 +557,86 @@
                 width: 100%;
                 margin-left: 0;
                 margin-top: 5em;
+            }
+        }
+    }
+}
+
+// Review Block
+
+// FOOTER ____________________________________________________________________________________
+.main-footer-container{
+    height: 300px;
+    background-image: url(./../assets/green-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    border-top: 1px solid black;
+    padding: 40px 10%;
+    @media (max-width: 960px){
+        height: max-content;
+        background-position: left;
+    }
+    .foot-cont{
+        @media (max-width: 960px){
+            align-items: center !important;
+            margin-top: 50px;
+        }
+        .social-media-icon{
+            width: 50px;
+            height: 50px;
+            transition: 0.3s all;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            &:hover{
+                transform: scale(1.1);
+                border: 2px solid green($color: #000000);
+                box-shadow: 0 0 10px black;
+            }
+        }
+        .footer-contact{
+            font-size: 1.3vw;
+            @media (max-width: 960px){
+                font-size: 7vw;
+            }
+            a{
+                color: black;
+                font-weight: 500;
+            }
+        }
+    }
+    .logo-footer{
+        .footer-logo{
+            width: 175px;
+            height: max-content;
+        }
+        @media (max-width: 960px){
+            justify-content: center;
+        }
+    }
+    .navigation-footer{
+        font-size: 1.8vw;
+        list-style: none;
+        @media (max-width: 960px){
+            font-size: 8vw;
+            font-weight: 500;
+            padding-left: 0;
+            margin-top: 40px;
+            text-align: center;
+        }
+        li{
+            border-left: 2px solid black;
+            padding-left: 20px;
+            transition: 0.3s all;
+            @media (max-width: 960px){
+                border-left: none;
+                padding-left: 0px;
+            }
+            a{
+                color: black;
+            }
+            &:hover{
+                border-left: 10px solid black;
+                text-shadow: 0 0 10px rgb(65, 155, 20);
             }
         }
     }
