@@ -593,7 +593,7 @@
     .foot-cont{
         @media (max-width: 960px){
             align-items: center !important;
-            margin-top: 50px;
+            margin-top: 100px;
         }
         .social-media-icon{
             width: 50px;
@@ -634,7 +634,7 @@
             font-size: 8vw;
             font-weight: 500;
             padding-left: 0;
-            margin-top: 40px;
+            margin-top: 100px;
             text-align: center;
         }
         li{
@@ -674,6 +674,7 @@
     }
     .swiper-2 {
         width: 100%;
+        overflow-x: hidden !important;
         .swiper-slide{
             cursor: pointer;
             .reviewer-photo{
