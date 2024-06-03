@@ -1,0 +1,93 @@
+.main_details_info_page{
+    .details-image-size{
+        width: 120px;
+        height: 120px;
+        @media (max-width: 960px){
+            width: 200px;
+            height: 200px;
+        }
+    }   
+    .details-title-style{
+        font-weight: bold;
+        font-size: 32px;
+        padding: 50px 0;
+        @media (max-width: 960px){
+            width: 90%;
+            text-align: center;
+            font-size: 36px;
+            margin-top: -50px;
+        }
+    }
+    .details-description{
+        background: rgb(35, 35, 35);
+        .details-description-style{
+            width: 70%;
+            padding: 40px;
+            color: white;
+            font-size: 24px;
+            line-height: 130%;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px black;
+            @media (max-width: 960px){
+                width: 95%;
+                font-size: 22px;
+                text-align: center;
+            }
+            .moroz-style{
+                color: rgb(255, 217, 0);
+            }
+        }
+        .details-call-part{
+            padding-bottom: 50px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-shadow: 0 0 10px black;
+            font-size: 24px;
+            @media (max-width: 960px){
+                font-size: 22px;
+            }
+            .details-call{
+                color: rgb(255, 217, 0);
+                font-size: 32px;
+                text-shadow: 0 0 10px black;
+                transition: 0.2s all;
+                @media (max-width: 960px){
+                    font-size: 28px;
+                }
+                &:hover{
+                    color: rgb(67, 228, 8);
+                }
+            }
+        }
+    }
+    .details-page-ontop-button{
+        font-size: 32px;
+        font-weight: 500;
+        width: 90%;
+        color: black;
+        @media (max-width: 960px){
+            font-size: 28px;
+        }
+    }
+    .details-page-button{
+        padding: 12px 0px 16px;
+        width: 400px;
+        margin-top: 20px;
+        text-align: center;
+        border: 2px solid black;
+        background: rgb(255, 217, 0);
+        color: black;
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: uppercase;
+        transition: 0.3s all;
+        @media (max-width: 960px){
+            width: 95%;
+        }
+        &:hover{
+            background: rgb(67, 228, 8);
+        }
+    }
+}
