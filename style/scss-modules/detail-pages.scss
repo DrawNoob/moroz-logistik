@@ -92,3 +92,48 @@
         }
     }
 }
+
+// CONTACT US
+.contact-title{
+    font-size: 64px;
+    font-weight: 600;
+    padding: 40px 0;
+}
+.contact-us-block{
+    background: rgb(223, 223, 223);
+    .team-container{
+        padding: 50px 0;
+        @media (max-width: 960px){
+            width: 95% !important;
+        }
+        .team-photo{
+            width: 30%;
+            border: 1px solid black;
+            box-shadow: 0 0 5px black;
+            @media (max-width: 960px){
+            width: 95%;
+            }
+        }
+        .team-description{
+            width: 60%;
+            text-align: center;
+            padding: 40px;
+            h3{
+                font-size: 24px;
+            }
+            .name-team{
+                font-size: 64px;
+            }
+            .name-desc{
+                font-size: 20px;
+                line-height: 150%;
+            }
+            .contact-data{
+                font-size: 32px;
+            }
+            @media (max-width: 960px){
+            width: 95%;
+            }
+        }
+    }
+}
