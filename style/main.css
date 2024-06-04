@@ -399,6 +399,7 @@ input[type=file] {
 @media (max-width: 960px) {
   .contact-us-block .team-container {
     width: 95% !important;
+    padding: 10px 0;
   }
 }
 .contact-us-block .team-container .team-photo {
@@ -416,15 +417,37 @@ input[type=file] {
   text-align: center;
   padding: 40px;
 }
+@media (max-width: 960px) {
+  .contact-us-block .team-container .team-description {
+    padding: 10px;
+  }
+}
 .contact-us-block .team-container .team-description h3 {
   font-size: 24px;
+}
+@media (max-width: 960px) {
+  .contact-us-block .team-container .team-description h3 {
+    font-size: 18px;
+  }
 }
 .contact-us-block .team-container .team-description .name-team {
   font-size: 64px;
 }
+@media (max-width: 960px) {
+  .contact-us-block .team-container .team-description .name-team {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+}
 .contact-us-block .team-container .team-description .name-desc {
   font-size: 20px;
   line-height: 150%;
+}
+@media (max-width: 960px) {
+  .contact-us-block .team-container .team-description .name-desc {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
 }
 .contact-us-block .team-container .team-description .contact-data {
   font-size: 32px;
