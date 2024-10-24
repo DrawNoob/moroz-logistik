@@ -1159,6 +1159,7 @@ input[type=file] {
   transition: 0.3s all;
   border: 2px solid transparent;
   border-radius: 50%;
+  border: 1px solid black;
 }
 .main-footer-container .foot-cont .social-media-icon:hover {
   transform: scale(1.1);
