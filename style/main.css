@@ -167,7 +167,7 @@ input[type=file] {
   justify-content: center;
   align-items: flex-end;
   padding: 15px;
-  background-image: url(./../../assets/burger-bg.jpg);
+  background-image: url(./../../assets/burger-bg.webp);
   background-size: cover;
   background-position: top;
   transform: translateX(-100%);
@@ -533,7 +533,7 @@ input[type=file] {
 }
 
 .main-bg-with-form {
-  background-image: url(./../assets/main-bg-family.jpg);
+  background-image: url(./../assets/main-bg-family.webp);
   background-size: cover;
   background-position: top;
   padding-bottom: 50px;
@@ -929,7 +929,7 @@ input[type=file] {
 
 .swiper-full-container {
   width: 100%;
-  background-image: url(./../assets/wooden.jpg);
+  background-image: url(./../assets/wooden.webp);
   background-size: cover;
   padding: 90px 0 !important;
 }
@@ -953,8 +953,7 @@ input[type=file] {
 .swiper-full-container .swiper {
   width: 35%;
   height: max-content;
-  border: 1px solid black;
-  box-shadow: 0 0 20px rgba(143, 71, 4, 0.581);
+  border: 3px solid white;
 }
 @media (max-width: 1440px) {
   .swiper-full-container .swiper {
@@ -970,8 +969,10 @@ input[type=file] {
   width: 100%;
   padding: 12px 0;
   letter-spacing: 2px;
-  font-weight: 400;
-  background-color: rgb(23, 9, 1);
+  font-weight: 600;
+  font-size: 46px;
+  background-color: white;
+  color: black;
   margin-bottom: 0;
 }
 @media (max-width: 960px) {
@@ -984,7 +985,7 @@ input[type=file] {
   width: 100%;
   display: flex;
   padding: 2.5em;
-  background-image: url(./../assets/green-bg-2.jpg);
+  background-image: url(./../assets/green-bg-2.webp);
   background-size: cover;
   background-position: center;
   margin-top: 100px;
@@ -1134,7 +1135,7 @@ input[type=file] {
 
 .main-footer-container {
   height: 300px;
-  background-image: url(./../assets/green-bg.jpg);
+  background-image: url(./../assets/green-bg.webp);
   background-size: cover;
   background-position: bottom;
   border-top: 1px solid black;
