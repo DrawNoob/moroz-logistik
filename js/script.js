@@ -124,11 +124,17 @@ async function sendEmail() {
     });
 
     emailjs.send('service_emailjs_dn', 'template_x0xmahc', formObj)
-        .then(function(response) {
-            alert('Ihr Formular wurde erfolgreich übermittelt. Wir werden uns in Kürze mit Ihnen in Verbindung setzen. Sie können auch die Nummer im Header der Website anrufen!', response.status, response.text);
-        }, function(error) {
-            alert('Something went wrong...', error);
-        });
+    .then(function(response) {
+        document.getElementById("successModal").style.display = "flex";
+    }, function(error) {
+        alert('Something went wrong...', error);
+    });
+
+    // Закриття модального вікна при натисканні на кнопку
+    document.getElementById("closeModal").addEventListener("click", function() {
+        document.getElementById("successModal").style.display = "none";
+    });
+
 }
 
 // Accordion _____________________________________________________________________________
